@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".list_fragment">
+
+    <RelativeLayout
+        android:background="#000"
+        android:id="@+id/main_lay"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:id="@+id/image"
+            android:src="@drawable/poster"
+            android:layout_margin="3dp"
+            android:padding="5dp"
+            android:layout_width="120dp"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_toRightOf="@id/image"
+            android:id="@+id/text_ll"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_margin="10dp"
+                android:textColor="#fff"
+                android:id="@+id/comedian_name_video"
+                android:textSize="15sp"
+                android:textAllCaps="true"
+                android:layout_marginTop="10dp"
+                android:text="Piyush Maheswari"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textColor="#fff"
+                android:layout_margin="10dp"
+                android:textSize="15sp"
+                android:id="@+id/video_name"
+                android:text="Video Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textColor="#fff"
+                android:layout_margin="10dp"
+                android:id="@+id/video_link"
+                android:textSize="15sp"
+                android:text="Play Video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</FrameLayout>
